@@ -6,6 +6,7 @@ __pycache__/
 *.pyc
 *.pyo
 .*.swp
+lemon/
 
 # Dependencies
 /lemon/lib/
