@@ -1,0 +1,13 @@
+# Virtual environment
+venv/
+.venv/
+.vscode/
+__pycache__/
+*.pyc
+*.pyo
+.*.swp
+
+# Dependencies
+/lemon/lib/
+/lemon/include/
+/lemon/bin/
