@@ -1,2 +1,0 @@
-Testing Git access to start the project
-Testing pull request back to local system repository
