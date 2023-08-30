@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework.decorators import api_view
 from .models import Menu, MenuCategory, Booking
-from .serializers import MenuSerializer, MenuCategorySerializer
+from .serializers import MenuSerializer, MenuCategorySerializer, BookingSerializer
 from rest_framework import generics, status
 from django.contrib.auth.models import User, Group
 from rest_framework.exceptions import PermissionDenied
@@ -33,6 +33,6 @@ class MenuItemView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
 
 class BookingView(generics.ListCreateAPIView):
     queryset = Booking.objects.all()
-    serializer_class = MenuSerializer
+    serializer_class = BookingSerializer
     permission_classes=[IsAuthenticated]
 
