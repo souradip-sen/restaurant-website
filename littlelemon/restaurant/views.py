@@ -16,8 +16,12 @@ from rest_framework.permissions import IsAdminUser, IsAuthenticated
 def home(request):
     return render(request, 'index1.html')
 
-
 #API Views
+
+class MenuCategoryView(generics.ListCreateAPIView):
+    queryset = MenuCategory.objects.all()
+    serializer_class = MenuCategorySerializer
+
 class MenuView(generics.ListCreateAPIView):
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
