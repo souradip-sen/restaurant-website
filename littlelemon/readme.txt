@@ -1,6 +1,6 @@
 Please review the following end points:
 
-1. Djoser endpoints:
+1. User registration endpoints:
 
 1.1. http://127.0.0.1:8000/auth/users/
 METHOD: POST
@@ -29,6 +29,15 @@ METHOD: GET
 Authentication required- YES
 
 Usecase- registered users can use their token to access their login credentials
+
+1.4. http://127.0.0.1:8000/api-token-auth
+METHOD: POST
+Authentication required- YES
+Payload:
+username
+password
+
+Usecase- can use this endpoint to generate a token
 
 2. Menu-categories endpoint:
 
