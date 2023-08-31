@@ -14,7 +14,7 @@ class Menu(models.Model):
     description=models.CharField(max_length=1000, default="")
     inventory=models.IntegerField(null=False, default=100)
     def __str__(self)->str:
-        return self.title
+        return f'{self.title} : {str(self.price)}'
     
 class Booking(models.Model):
     name = models.CharField(max_length=200)
