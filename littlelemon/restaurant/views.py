@@ -18,7 +18,7 @@ def home(request):
 
 #API Views
 
-class MenuCategoryView(generics.ListCreateAPIView):
+class MenuCategoryView(generics.ListAPIView):
     queryset = MenuCategory.objects.all()
     serializer_class = MenuCategorySerializer
 
