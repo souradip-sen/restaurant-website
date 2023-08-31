@@ -1,7 +1,3 @@
-# restaurant-website
-This is a website for the Little Lemon restaurant. This project is the Capstone for the Meta Backend Developer Certification
-
-API Endpoint documentation:
 Please review the following end points:
 
 1. User registration endpoints:
@@ -87,7 +83,6 @@ name
 guests
 reservation_date (in yyyy-mm-dd)
 reservation_slot (integer between 0 to 23, corresponding to hour of day)
-
 
 
 
